@@ -10,35 +10,37 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.example.testfinder.R;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class AddAddressActivity extends AppCompatActivity {
 
     TextView edtAddress;
-    Button btnAdd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_address);
+        ButterKnife.bind(this);
 
         edtAddress = (TextView) findViewById(R.id.edt_address);
-        btnAdd = (Button) findViewById(R.id.btn_add);
-
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                //verifica se há um endereço digitado
-                if (edtAddress.getText().toString().isEmpty()){
-                    Toast.makeText(AddAddressActivity.this, "Digite o endereço que deseja adicionar", Toast.LENGTH_SHORT).show();
-                }else {
-                    //retorna o endereço para a MainActivity
-                    Intent resultIntent = new Intent();
-                    resultIntent.putExtra("movie_name", edtAddress.getText().toString());
-                    setResult(Activity.RESULT_OK, resultIntent);
-                    finish();
-                }
-            }
-        });
     }
+    //Implementação em butterknife do clique do botão adicionar endereço
+    @OnClick(R.id.btn_add)
+    public void pegaEndereço ()
+    {
+        //verifica se há um endereço digitado
+        if (edtAddress.getText().toString().isEmpty()) {
+            Toast.makeText(AddAddressActivity.this, "Digite o endereço que deseja adicionar", Toast.LENGTH_SHORT).show();
+        } else {
+            //retorna o endereço para a MainActivity
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra("movie_name", edtAddress.getText().toString());
+            setResult(Activity.RESULT_OK, resultIntent);
+            finish();
+        }
+
+    }
+
 }

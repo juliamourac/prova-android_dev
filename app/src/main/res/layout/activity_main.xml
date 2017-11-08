@@ -1,13 +1,13 @@
 <!--Adicao do relative layout para organização dos componentes -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundMain">
 
     <!--Mudança no scrollView adicao de cores-->
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/backgroundMain">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
         <!--Adição da imagem-->
         <ImageView
@@ -15,27 +15,39 @@
             android:layout_height="300dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="24dp"
+            android:contentDescription="@null"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imagemLogo"
+
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_below="@id/imagemLogo"
             >
 
             <Button
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="@string/add_address"
+                android:textColor="@color/corTexto"
                 android:id="@+id/btn_add_address"
-                android:background="@color/corBotao"/>
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/botaoshaperetangular"/>
 
             <Button
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="@string/show_addresses"
-                android:id="@+id/btn_show_addresses"/>
-
+                android:textColor="@color/corTexto"
+                android:layout_margin="16dp"
+                android:id="@+id/btn_show_addresses"
+                android:layout_gravity="center"
+                android:background="@drawable/botaoshaperetangular"/>
+        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>

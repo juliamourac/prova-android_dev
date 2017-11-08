@@ -3,39 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-26.0.0-alpha1_398251bbb7718fd508a03d6a633588f5a8246509.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/aula/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="023ee503b631f69511e335a061ea008f8da60f40">
         <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_d03cdb354fad0cad033dbed50b183fef948caa2a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-26.0.0-alpha1_eccd6c296c087744a36a2fe577b2ffee0c8910f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-26.0.0-alpha1_1ed75e69be28c5db0ef0c9c7adcece275c75ce46.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,21 +21,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/jars/classes.jar"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-26.0.0-alpha1_395c8f889356d730ede41167cb30efa7418bb3a8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-26.0.0-alpha1_bbdab4b6fb3bb15c7cec7f023be181df0a2047f0.jar" />
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-26.0.0-alpha1_1ed75e69be28c5db0ef0c9c7adcece275c75ce46.jar" />
     </item>
     <item
         is-multidex="false"
@@ -81,6 +45,60 @@
         revision="26.0.1"
         sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
         <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-26.0.0-alpha1_494abf9b6d2bf6ee1f7c98cb04e636bf5e1f2c95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-26.0.0-alpha1_398251bbb7718fd508a03d6a633588f5a8246509.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-26.0.0-alpha1_eccd6c296c087744a36a2fe577b2ffee0c8910f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-26.0.0-alpha1_395c8f889356d730ede41167cb30efa7418bb3a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.8.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.8.1_3f171dc3627ecb184007f1f83607d5e7175f29fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/localizator-2.3/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-26.0.0-alpha1_bbdab4b6fb3bb15c7cec7f023be181df0a2047f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bcc/726556/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/home/bcc/726556/localizator-2.3/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.8.1_770f08e556a94d9cee16cce9530c10cb4cf16c0f.jar" />
     </item>
     <item
         is-multidex="false"

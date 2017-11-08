@@ -7,12 +7,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import br.com.example.testfinder.R;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.OnLongClick;
 
 import java.util.List;
 
 public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.ViewHolder>{
 
     private List<String> addressesList;
+    OnRecyclerViewSelected onRecyclerViewSelected;
 
     //Construtor para receber a lista
     AddressesAdapter(List<String> addressesList){
@@ -41,11 +46,20 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.View
     //Mapeamento dos componentes da View
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tvAddress;
+        @BindView(R.id.tv_address)  TextView tvAddress;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            tvAddress = itemView.findViewById(R.id.tv_address);
+            ButterKnife.bind(this, itemView);
         }
+        @OnClick(R.id.address_item)
+        void onItemClick(View view){
+            if(onRecyclerViewSelected != null)
+                onRecyclerViewSelected.onClick(view, tvAddress.toString() );
+
+        }
+    }
+    public void setOnRecyclerViewSelected(OnRecyclerViewSelected onRecyclerViewSelected){
+        this.onRecyclerViewSelected = onRecyclerViewSelected;
     }
 }
