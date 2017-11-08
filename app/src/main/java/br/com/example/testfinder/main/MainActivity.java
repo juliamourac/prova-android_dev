@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements AddressView {
             lstAddresses.add(data.getStringExtra("movie_name"));
         }
     }
+    //Atualiza a lista de endereço
     @Override
     public void updateList(ArrayList<String> addressList) {
         lstAddresses = addressList;

@@ -52,13 +52,15 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.View
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
+        //Metodo é acionado quando o usuario quer adicionar um novo endereco
         @OnClick(R.id.address_item)
         void onItemClick(View view){
             if(onRecyclerViewSelected != null)
-                onRecyclerViewSelected.onClick(view, tvAddress.toString() );
+                onRecyclerViewSelected.onClick(view, tvAddress.toString() ); //metodo aciona o onclick implementado
 
         }
     }
+    //Seta a interface OnRecyclerViewSelected
     public void setOnRecyclerViewSelected(OnRecyclerViewSelected onRecyclerViewSelected){
         this.onRecyclerViewSelected = onRecyclerViewSelected;
     }

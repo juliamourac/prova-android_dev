@@ -15,10 +15,11 @@ public class AddAddressPresenter {
     private AddressView addressView;
     private ArrayList<String> addressList = new ArrayList<>();
 
+    //Construtor que recebe como parametro o AddressView
     AddAddressPresenter(AddressView addressView){
         this.addressView = addressView;
     }
-
+    //Metodo para adicionar um novo endereco na lista e chama o metodo updatelist
     void addMovieInList(int requestCode, int resultCode, Intent data){
         if(requestCode == 123 && resultCode == Activity.RESULT_OK){
             String movieName = data.getStringExtra("movie_name");

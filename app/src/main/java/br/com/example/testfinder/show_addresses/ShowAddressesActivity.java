@@ -35,7 +35,7 @@ public class ShowAddressesActivity extends AppCompatActivity {
         AddressesAdapter addressesAdapter = new AddressesAdapter(lstAddresses);
 
         addressesAdapter.setOnRecyclerViewSelected(new OnRecyclerViewSelected() {
-            //Clique simples
+            //Implementação do clique simples em um item da lista
             @Override
             public void onClick(View view, String endereco) {
                 //Implementação da visualização do mapa atraves de uma intent implicita
@@ -43,6 +43,7 @@ public class ShowAddressesActivity extends AppCompatActivity {
                 openMap.setData(Uri.parse("geo:0,0?q=" +  Uri.encode(endereco) ));
                 openMap.setPackage("com.google.android.apps.maps");
                 if (openMap.resolveActivity(getPackageManager()) != null) {
+                    //Comeca a activity openMap
                     startActivity(openMap);
                 }
                 else{
