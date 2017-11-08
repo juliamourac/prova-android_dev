@@ -10,12 +10,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.example.testfinder.R;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class AddAddressActivity extends AppCompatActivity {
-
-    TextView edtAddress;
+    @BindView(R.id.edt_address) TextView edtAddress;
 
 
     @Override
@@ -24,7 +24,6 @@ public class AddAddressActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_address);
         ButterKnife.bind(this);
 
-        edtAddress = (TextView) findViewById(R.id.edt_address);
     }
     //Implementação em butterknife do clique do botão adicionar endereço
     @OnClick(R.id.btn_add)

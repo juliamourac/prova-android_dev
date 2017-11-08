@@ -18,6 +18,7 @@
             android:contentDescription="@null"
             android:layout_centerHorizontal="true"
             android:id="@+id/imagemLogo"
+            android:src="@drawable/logo"
 
             />
 

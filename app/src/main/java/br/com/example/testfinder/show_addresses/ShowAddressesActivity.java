@@ -40,10 +40,12 @@ public class ShowAddressesActivity extends AppCompatActivity {
             public void onClick(View view, String endereco) {
                 //Implementação da visualização do mapa atraves de uma intent implicita
                 Intent openMap = new Intent(Intent.ACTION_VIEW);
-                openMap.setData(Uri.parse("geo=0,0?q=" + endereco ));
-                if(openMap.resolveActivity(getPackageManager()) != null){
+                openMap.setData(Uri.parse("geo:0,0?q=" +  Uri.encode(endereco) ));
+                openMap.setPackage("com.google.android.apps.maps");
+                if (openMap.resolveActivity(getPackageManager()) != null) {
                     startActivity(openMap);
-                }else{
+                }
+                else{
                     Toast toast​ = Toast.makeText(ShowAddressesActivity.this , "Impossível​ abrir o mapa", Toast.LENGTH_LONG);
                     toast​.show();
                 }
